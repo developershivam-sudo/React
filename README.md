@@ -27,5 +27,5 @@
     <Greeting name="Alice" />
     ```
 
-## .json Data Handling
+## Json Data Handling
 - Used Dummy Json data and pass to the 
