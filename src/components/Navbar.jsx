@@ -6,8 +6,8 @@ function Navbar () {
 
     return (
         <>
-        <nav className="bg-emerald-200 flex px-10 py-5 items-center justify-between">
-            <h2 className="text-2xl">^_^</h2>
+        <nav className="w-screen bg-emerald-400 flex px-10 py-5 items-center justify-between">
+            <h2 className="text-2xl">^_^ <input className="text-black w-20 rounded" type="text" /></h2>
             <NavPart2 />
         </nav>
         </>
