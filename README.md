@@ -28,4 +28,4 @@
     ```
 
 ## Json Data Handling
-- Used Dummy Json data and pass to the 
+- Used Dummy Json data and pass to the component as **props**
