@@ -29,3 +29,35 @@
 
 ## Json Data Handling
 - Used Dummy Json data and pass to the component as **props**
+
+## Routing
+### Notes on Routing in React
+
+- React Router is a library used for handling routing in React applications.
+- It allows navigation between different components without reloading the page.
+- Routes are defined using the `<Route>` component inside a `<Routes>` wrapper.
+- The `<BrowserRouter>` component is used to wrap the application and enable routing.
+- Dynamic routing can be achieved using route parameters (e.g., `/user/:id`).
+- Navigation between routes is done using the `<Link>` or `<NavLink>` components.
+- Programmatic navigation can be achieved using the `useNavigate` hook.
+- Nested routes allow defining child routes within parent routes.
+- React Router supports features like lazy loading, route guards, and custom hooks.
+- Example:
+    ```jsx
+    import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+    function App() {
+        return (
+            <BrowserRouter>
+                <nav>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                </nav>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </BrowserRouter>
+        );
+    }
+    ```
