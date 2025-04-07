@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -10,6 +10,10 @@ const App = () => {
     
     setData(response.data);
   }
+
+  useEffect( () => {
+    getData()
+  }, [])
 
   return (
     <div className='p-10'>
