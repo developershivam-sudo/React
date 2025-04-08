@@ -5,6 +5,9 @@ import About from './pages/About'
 import Contacts from './pages/Contacts'
 import Products from './pages/Products'
 import Navbar from './components/Navbar';
+
+
+
 const App = () => {
   return (
     <div className='text-white'>
